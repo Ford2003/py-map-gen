@@ -1,8 +1,8 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import colors
-from mersenne import MersenneRng
-from funcs import *
+from .mersenne import MersenneRng
+from .funcs import *
 from dataclasses import dataclass
 from copy import deepcopy
 
@@ -13,8 +13,8 @@ class Point:
     type: str
     colour: str
     temp: float | int
-    hum: float | int
     dew: float | int
+    hum: float | int
 
 
 class MapBuild2D:
